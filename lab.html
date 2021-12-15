@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<title> SCHOOL LABS</title>
+<head>
+    <style>
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+header{
+     background-color:red;
+     float:left;
+     width:100%;
+     height:80px;
+  
+
+ }
+ 
+ .img{
+     float:left;
+     margin:7px;
+ }
+ .name{
+     float:left;
+     padding:10px 4px;
+     margin:7px;
+     font-size:15px;
+ }
+ header .menu{
+   float:left;
+   
+ }
+ .menu{
+   margin-left:260px;
+ }
+ .menu ul{
+    display:inline-flex;
+    list-style: none;
+    color:white;
+    float:left;
+    
+   
+ }
+ .menu ul li{
+   width:100%;
+   text-align:center;
+   padding:10px;
+   margin:5px;
+   padding-left:17px;
+ 
+ 
+  
+ }
+ .menu ul li a{
+   text-decoration: none;
+   color:white;
+   font-size:20px;
+   height:30px;
+  }
+ .active, .menu ul li:hover {
+   background-color:lightgreen;
+   border-radius: 3px;
+ }
+  .submenu{
+    display:none;
+    width:200px;
+  }
+  .menu ul li:hover .submenu{
+    display:block;
+    position:absolute;
+    background-color:lightgreen;
+    
+    margin-left:-17px;
+  }
+  .menu ul li:hover .submenu ul{
+    display:block;
+    
+  }
+  .menu ul li:hover .submenu ul li{
+    width:150px;
+    padding:10px;
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+  }
+  .menu ul li:hover .submenu ul li:last-child{
+    border-bottom: 0px;
+  }
+  .menu ul li:hover .submenu ul li a:hover{
+    color:red;
+   
+  }
+  
+ .line{
+     background-color: white;
+     width: 100%;
+     height: 80px;
+ }
+ 
+ 
+section{
+    width: 100%;
+    height: auto;
+    
+    
+ }
+.labs{
+    width: 100%;
+    height:100px;
+    background-image: url('img1.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+.labs h1{
+padding: 19px;
+    font-size: 50px;
+    color:blue;
+}
+.types{
+  padding: 30px;
+}
+.types h1{
+  letter-spacing: .5px;
+  font-size:25px;
+}
+.types h3{
+  letter-spacing: .4px;
+}
+.whole_about{
+        margin-top:10px;
+        width:100%;
+        height: 500px;
+     
+      }
+     .whole_about h1{
+        margin:10px;
+        color:red;
+        font-size:40px;
+      }
+      .images{
+        width:30%;
+        float: left;
+        padding:20px;
+        z-index:1000;
+        
+
+      }
+      .maths{
+        background-color:rgb(248, 245, 244);
+        width:59%;
+        float:right;
+        height:400px;
+        padding:40px;
+        margin:20px;
+        z-index:1000;
+        
+      }
+      
+      .write h2{
+        font-size:30px;
+        padding-bottom: 10px;
+        text-decoration: underline;
+      }
+      .write p{
+        font-size:20px;
+      }
+      .write h2 p{
+        padding:10px;
+      }
+      .maths2{
+        background-color:rgb(248, 245, 244);
+        width:60%;
+        float:left;
+        height:400px;
+        padding:40px;
+        margin:20px 0 20px 20px;
+        z-index:1000;
+       
+        
+      }
+      .images2{
+        width:30%;
+        float: left;
+        padding-top: 20px;
+        padding-left:10px;
+        z-index:1000;
+       
+
+      }
+     
+      
+      .write2 h2{
+        font-size:30px;
+        padding-bottom: 10px;
+        text-decoration: underline;
+      }
+      .write2 p{
+        font-size:20px;
+      }
+      .write2 h2 p{
+        padding:10px;
+      }
+      .footer{
+        background-color: rgb(219, 7, 7);
+        height:280px;
+        width:100%;
+        color:white;
+        
+      }
+      .footer .inner{
+        
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        padding:10px;
+      }
+      .footer .footer1{
+        margin-left:-390px;
+      }
+     
+      .footer .footer1 h3{
+         font-size:70px;
+         letter-spacing: 3px;
+      }
+      .footer .footer2{
+        margin-right:170px;
+        margin-top:30px;
+        
+      }
+      .footer .footer2 h3{
+        color:black;
+        margin-bottom:25px;
+        font-size:25px;
+      
+      }
+      .footer .footer3{
+        margin-right:20px;
+        margin-top:30px;
+      }
+      
+      .footer .footer3 h3{
+        color:black;
+        margin-bottom:25px;
+        font-size:25px;
+      }
+      .footer .footer2 ul li{
+        list-style:none;
+        margin-bottom:15px;
+        cursor:pointer;
+        transition: all 0.3s ease-in-out;
+       
+      }
+      
+      .footer .footer3 ul li{
+        list-style:none;
+        margin-bottom:15px;
+        cursor:pointer;
+        transition: all 0.3s ease-in-out;
+        
+      }
+      .footer .footer2 ul li a{
+       text-decoration: none;
+        color:white;
+      }
+        .footer .footer3 ul li a{
+        text-decoration: none;
+          color:white;
+        }
+      .footer .footer2 ul li a:hover{
+        color:black;
+       
+      }
+      .footer .footer3 ul li a:hover{
+        color:black;
+       
+    
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="img" >
+    <img src="logo_remove.png" alt="logo" style="height:60px;width:60px;margin-left:4px; background-color: red;">
+    </div>
+    <div class="name">
+        <h3 style="color:white;">B.B.S.S.M. INTER COLLEGE <br>MEERUT</h3>
+    </div>
+   <div class="menu">
+        <ul>
+            <li ><a href="index.html">home</a></li>
+            <li><a href="#">About us</a>
+                <div class="submenu">
+                <ul>
+                    <li><a href="about.html">Introduction</a></li>
+                   
+                     <li><a href="vimi.html">Vision & Mission</a></li>
+                     <li><a href="">Affiliation</a></li>
+                     
+        </ul>           
+                 
+                 </div>
+            </li>
+            <li><a href="#">Message</a>
+                <div class="submenu"> 
+                    <ul>
+                        <li><a href="chairman .html" target="_blank">Chairman's Message</a></li>
+                           <li><a href="principle.html" target="_blank">Principal's Message</a></li>
+                         <li><a href="">Management</a></li>
+                    </ul>  
+             </li>
+            <li><a href="#">Admissions</a>
+                <div class="submenu"> 
+                    <ul>   
+                        <li><a href="registration.html">Online Registration</a></li>
+                        
+                        <li><a href="">Fee Structure</a></li>
+                        </ul>
+            </li>
+            <li class="active"><a href="#">Facilities</a>
+                <div class="submenu">
+                    <ul>
+                        <li><a href="">Academic</a></li>
+                        <li><a href="playground.html">Sports</a></li>
+                      
+                        <li><a href="lab.html">Labs</a></li>
+                      <li><a href="">Smart Classes</a></li>
+                       
+                      </ul>
+                    </div>
+            </li>
+            
+            <li><a href="lib.html">Library</a>
+                </li>
+            <li><a href="gallery.html">gallery</a>
+                </li>
+         
+</header>
+    <div class="line">
+    
+    </div>
+ 
+  <section>
+        <div class="labs">
+            <h1>LABS</h1>
+        </div>
+        <div class="types">
+         <b><h1> "There are three principle means of acquiring knowledge… Observation of nature, reflection and experimentation. Observation collects facts; reflection combines them; experimentation verifies the result of that combination."</h1></b>
+          <br>
+          <h3>We, at BBS Shishu Mandir emphasize learning by doing. And for the same, we have well equipped labs with various apparatus and working models. Students visualize through working models, the theory concepts being taught in their classes.
+          We have separate labs of Physics, Chemistry and Biology where the students are revealed to the facts that reside behind the theory, they study in their respective classes.</h3>
+          
+        </div>
+        <section class="whole_about">
+            <div class="about">
+                <center><h1>PHYSICS LAB</h1></center>                    </div>
+
+        <div class="images">
+        <div class="centered">
+            <img src="phy.jpg" alt="img" height="400px" width="500px">
+
+        </div>
+        </div>
+
+        <div class="maths">
+        <div class="write">
+                <h2>PHYSICS LAB</h2><br>
+                <p>This was the dream which, in 1952 inspired some RSS workers to take up education of children as a mission of their life. The people engaged in this noble task of nation building through proper education of younger generation, laid the foundation of the first school at Gorakhpur in a building rented at a monthly rent of five rupees. After due consideration, they named their school as Saraswati Shishu Mandir-Temple of the Goddess Saraswati dedicated to the children. Thanks to their zeal, dedication and hard work that such like schools began to be established at other places also.</p>
+                
+
+        </div>
+        </div>
+        </section>
+           <section class="whole_about">
+            <div class="about">
+                <center><h1>CHEMISTRY LAB</h1></center>                    </div>
+                <div class="maths2">
+                    <div class="write2">
+                            <h2>CHEMISTRY LAB</h2><br>
+                            <p>This was the dream which, in 1952 inspired some RSS workers to take up education of children as a mission of their life. The people engaged in this noble task of nation building through proper education of younger generation, laid the foundation of the first school at Gorakhpur in a building rented at a monthly rent of five rupees. After due consideration, they named their school as Saraswati Shishu Mandir-Temple of the Goddess Saraswati dedicated to the children. Thanks to their zeal, dedication and hard work that such like schools began to be established at other places also.</p>
+                    </div>
+                    </div>
+
+                    <div class="images2">
+                    <div class="centered2">
+                        <img src="chem.jpg" alt="img" height="400px" width="490px">
+
+                    </div>
+                    </div>
+
+      
+        </section>
+        <section class="whole_about">
+          <div class="about">
+              <center><h1>BIOLOGY LAB</h1></center>                    </div>
+
+      <div class="images">
+      <div class="centered">
+          <img src="bio.jpg" alt="img" height="400px" width="500px">
+
+      </div>
+      </div>
+
+      <div class="maths">
+      <div class="write">
+              <h2>BIOLOGY LAB</h2><br>
+              <p>This was the dream which, in 1952 inspired some RSS workers to take up education of children as a mission of their life. The people engaged in this noble task of nation building through proper education of younger generation, laid the foundation of the first school at Gorakhpur in a building rented at a monthly rent of five rupees. After due consideration, they named their school as Saraswati Shishu Mandir-Temple of the Goddess Saraswati dedicated to the children. Thanks to their zeal, dedication and hard work that such like schools began to be established at other places also.</p>
+              
+
+      </div>
+      </div>
+      </section>
+      <section class="whole_about">
+        <div class="about">
+            <center><h1>COMPUTER LAB</h1></center>                    </div>
+            <div class="maths2">
+                <div class="write2">
+                        <h2>COMPUTER LAB</h2><br>
+                        <p>This was the dream which, in 1952 inspired some RSS workers to take up education of children as a mission of their life. The people engaged in this noble task of nation building through proper education of younger generation, laid the foundation of the first school at Gorakhpur in a building rented at a monthly rent of five rupees. After due consideration, they named their school as Saraswati Shishu Mandir-Temple of the Goddess Saraswati dedicated to the children. Thanks to their zeal, dedication and hard work that such like schools began to be established at other places also.</p>
+                </div>
+                </div>
+
+                <div class="images2">
+                <div class="centered2">
+                    <img src="comp.jpg" alt="img" height="400px" width="500px">
+
+                </div>
+                </div>
+
+  
+    </section>
+      <section class="whole_about">
+        <div class="about">
+            <center><h1>A.T.L. LAB </h1></center>                    </div>
+
+    <div class="images">
+    <div class="centered">
+        <img src="atl 1.jpg" alt="img" height="400px" width="500px">
+
+    </div>
+    </div>
+
+    <div class="maths">
+    <div class="write">
+            <h2>A.T.L. LAB</h2><br>
+            <p>This was the dream which, in 1952 inspired some RSS workers to take up education of children as a mission of their life. The people engaged in this noble task of nation building through proper education of younger generation, laid the foundation of the first school at Gorakhpur in a building rented at a monthly rent of five rupees. After due consideration, they named their school as Saraswati Shishu Mandir-Temple of the Goddess Saraswati dedicated to the children. Thanks to their zeal, dedication and hard work that such like schools began to be established at other places also.</p>
+            
+
+    </div>
+    </div>
+    </section>
+        
+    </section>
+    <section class="footer">
+      <div class="inner">
+          <div class="footer1">
+              <h3>B.B.S.S.M. INTER COLLEGE</h3>
+          </div>
+          <div class="footer2">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="about.html">ABOUT US</a></li>
+                  <li><a href="vimi.html">MISSION</a></li>
+                  <li><a href="vimi.html">VISION</a></li>
+                  <li><a href="chairman .html">CHAIRMAN MESSAGE</a></li>
+              </ul>
+          </div>
+          <div class="footer3">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="about.html">LABS</a></li>
+                  <li><a href="playground.html">SPORTS</a></li>
+                  <li><a href="lib.html">LIBRARY</a></li>
+                  <li><a href="principle.html">PRINCIPAL MESSAGE</a></li>
+                
+                  
+              </ul>
+          </div>
+          
+      </div>
+     
+    
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<title>SCHOOL GALLERY </title>
+<head>
+    <style>
+     *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+header{
+     background-color:red;
+     float:left;
+     width:100%;
+     height:80px;
+  
+
+ }
+ 
+ .img{
+     float:left;
+     margin:7px;
+ }
+ .name{
+     float:left;
+     padding:10px 4px;
+     margin:7px;
+     font-size:15px;
+ }
+ header .menu{
+   float:left;
+   
+ }
+ .menu{
+   margin-left:260px;
+ }
+ .menu ul{
+    display:inline-flex;
+    list-style: none;
+    color:white;
+    float:left;
+    
+   
+ }
+ .menu ul li{
+   width:100%;
+   text-align:center;
+   padding:10px;
+   margin:5px;
+   padding-left:17px;
+ 
+ 
+  
+ }
+ .menu ul li a{
+   text-decoration: none;
+   color:white;
+   font-size:20px;
+   height:30px;
+  }
+ .active, .menu ul li:hover {
+   background-color:lightgreen;
+   border-radius: 3px;
+ }
+  .submenu{
+    display:none;
+    width:200px;
+  }
+  .menu ul li:hover .submenu{
+    display:block;
+    position:absolute;
+    background-color:lightgreen;
+    
+    margin-left:-17px;
+  }
+  .menu ul li:hover .submenu ul{
+    display:block;
+    
+  }
+  .menu ul li:hover .submenu ul li{
+    width:150px;
+    padding:10px;
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+  }
+  .menu ul li:hover .submenu ul li:last-child{
+    border-bottom: 0px;
+  }
+  .menu ul li:hover .submenu ul li a:hover{
+    color:red;
+   
+  }
+  .line{
+     background-color: white;
+     width: 100%;
+     height: 80px;
+ }
+ section{
+    width: 100%;
+    height: 1250px;
+
+ }.crazy{
+    width: 100%;
+    height:100px;
+    background-image: url('img1.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+.crazy h1{
+    padding: 19px;
+    font-size: 50px;
+    color:blue;
+}
+
+.main{
+    width: 100%;
+    height: 1000px;
+}
+.gallery {
+  border: 1px solid #ccc;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+.responsive {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 30px;
+  float: left;
+  width: 25%;
+  height:250px;
+}
+.footer{
+        background-color: rgb(219, 7, 7);
+        height:280px;
+        width:100%;
+        color:white;
+        
+      }
+      .footer .inner{
+        
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        padding:10px;
+      }
+      .footer .footer1{
+        margin-left:30px;
+      }
+     
+      .footer .footer1 h3{
+         font-size:70px;
+         letter-spacing: 3px;
+      }
+      .footer .footer2{
+        margin-right:170px;
+        margin-top:30px;
+        
+      }
+      .footer .footer2 h3{
+        color:black;
+        margin-bottom:25px;
+        font-size:25px;
+      
+      }
+      .footer .footer3{
+        margin-right:20px;
+        margin-top:30px;
+      }
+      
+      .footer .footer3 h3{
+        color:black;
+        margin-bottom:25px;
+        font-size:25px;
+      }
+      .footer .footer2 ul li{
+        list-style:none;
+        margin-bottom:15px;
+        cursor:pointer;
+        transition: all 0.3s ease-in-out;
+       
+      }
+      
+      .footer .footer3 ul li{
+        list-style:none;
+        margin-bottom:15px;
+        cursor:pointer;
+        transition: all 0.3s ease-in-out;
+        
+      }
+      .footer .footer2 ul li a{
+       text-decoration: none;
+        color:white;
+      }
+        .footer .footer3 ul li a{
+        text-decoration: none;
+          color:white;
+        }
+      .footer .footer2 ul li a:hover{
+        color:black;
+       
+      }
+      .footer .footer3 ul li a:hover{
+        color:black;
+       
+    
+      }
+
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="img" >
+        <img src="logo_remove.png" alt="logo" style="height:60px;width:60px;margin-left:4px; background-color: red;">
+        </div>
+        <div class="name">
+            <h3 style="color:white;">B.B.S.S.M. INTER COLLEGE <br>MEERUT</h3>
+        </div>
+       <div class="menu">
+            <ul>
+                <li ><a href="index.html">home</a></li>
+                <li><a href="#">About us</a>
+                    <div class="submenu">
+                    <ul>
+                        <li><a href="about.html">Introduction</a></li>
+                       
+                         <li><a href="vimi.html">Vision & Mission</a></li>
+                         <li><a href="">Affiliation</a></li>
+                         
+            </ul>           
+                     
+                     </div>
+                </li>
+                <li><a href="#">Message</a>
+                    <div class="submenu"> 
+                        <ul>
+                            <li><a href="chairman .html" target="_blank">Chairman's Message</a></li>
+                               <li><a href="principle.html" target="_blank">Principal's Message</a></li>
+                             <li><a href="">Management</a></li>
+                        </ul>  
+                 </li>
+                <li><a href="#">Admissions</a>
+                    <div class="submenu"> 
+                        <ul>   
+                            <li><a href="registration.html">Online Registration</a></li>
+                            
+                            <li><a href="">Fee Structure</a></li>
+                            </ul>
+                </li>
+                <li><a href="#">Facilities</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Academic</a></li>
+                            <li><a href="playground.html">Sports</a></li>
+                          
+                            <li><a href="lab.html">Labs</a></li>
+                          <li><a href="">Smart Classes</a></li>
+                           
+                          </ul>
+                        </div>
+                </li>
+                
+                <li><a href="lib.html">Library</a>
+                    </li>
+                <li class="active"><a href="gallery.html">gallery</a>
+                    </li>
+             
+    </header>
+    <div class="line">
+    </div>
+ <section>   
+    <div class="crazy">
+        <h1>GALLERY</h1>
+    </div>
+    <br>
+    
+ <div class="main">
+<div class="responsive">
+    <div class="gallery">
+     
+        <img src="image1.jpeg" alt="Cinque Terre" width="600" height="400">
+  
+      <div class="desc">tour </div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+    <div class="gallery">
+  
+        <img src="image2.jpg" alt="Forest" width="600" height="400">
+   
+      <div class="desc">Independence day celebration  </div>
+    </div>
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+     
+        <img src="image3.jpg" alt="Northern Lights" width="600" height="400">
+    
+      <div class="desc"> Shooting range</div>
+    </div>
+  </div>
+  
+  
+  <div class="responsive">
+      <div class="gallery">
+       
+          <img src="image4.jpg" alt="Cinque Terre" width="600" height="400">
+    
+        <div class="desc">Excersise</div>
+      </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+      
+            <img src="image5.jpg" alt="Forest" width="600" height="400">
+       
+          <div class="desc">Independence day celebration</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+         
+            <img src="image6.jpg" alt="Northern Lights" width="600" height="400">
+        
+          <div class="desc">NCC cadets</div>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          
+            <img src="image7.jpg" alt="Mountains" width="600" height="400">
+       
+          <div class="desc">science topper</div>
+        </div>
+      </div>
+      <div class="responsive">
+          <div class="gallery">
+           
+              <img src="image8.jpg" alt="Cinque Terre" width="600" height="400">
+        
+            <div class="desc">havan pooja</div>
+          </div>
+        </div>
+       
+          
+         
+          
+          <div class="responsive">
+            <div class="gallery">
+              
+                <img src="image9.jpg" alt="Mountains" width="600" height="400">
+           
+              <div class="desc">Drawing competition</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+          
+                <img src="image10.jpg" alt="Forest" width="600" height="400">
+           
+              <div class="desc">Winners of shooting competition</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+             
+                <img src="image11.jpg" alt="Northern Lights" width="600" height="400">
+            
+              <div class="desc">exhibition</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              
+                <img src="image12.jpg" alt="Mountains" width="600" height="400">
+           
+              <div class="desc">exhibition</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+          
+                <img src="image13.jpg" alt="Forest" width="600" height="400">
+           
+              <div class="desc">exhibition</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+             
+                <img src="iamge14.jpg" alt="Northern Lights" width="600" height="400">
+            
+              <div class="desc">exhibition</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+             
+                <img src="image15.jpg" alt="Northern Lights" width="600" height="400">
+            
+              <div class="desc">exhibition</div>
+            </div>
+          </div>
+          <div class="responsive">
+            <div class="gallery">
+             
+                <img src="image16.jpg" alt="Northern Lights" width="600" height="400">
+            
+              <div class="desc">chess winners</div>
+            </div>
+          </div>
+          
+          
+        
+    
+    
+</div>  
+
+</section>
+<section class="footer">
+    <div class="inner">
+        <div class="footer1">
+            <h3>B.B.S.S.M. INTER COLLEGE</h3>
+        </div>
+        <div class="footer2">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="vimi.html">MISSION</a></li>
+                <li><a href="vimi.html">VISION</a></li>
+                <li><a href="chairman .html">CHAIRMAN MESSAGE</a></li>
+            </ul>
+        </div>
+        <div class="footer3">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about.html">LABS</a></li>
+                <li><a href="playground.html">SPORTS</a></li>
+                <li><a href="lib.html">LIBRARY</a></li>
+                <li><a href="principle.html">PRINCIPAL MESSAGE</a></li>
+              
+                
+            </ul>
+        </div>
+        
+    </div>
+   
+  
+</section>
+
+</body>
+</html>

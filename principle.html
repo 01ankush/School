@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<title>PRINCIPAL MESSAGE</title>
+<head>
+    <style>
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+header{
+     background-color:red;
+     float:left;
+     width:100%;
+     height:80px;
+  
+
+ }
+ 
+ .img{
+     float:left;
+     margin:7px;
+ }
+ .name{
+     float:left;
+     padding:10px 4px;
+     margin:7px;
+     font-size:15px;
+ }
+ header .menu{
+   float:left;
+   
+ }
+ .menu{
+   margin-left:260px;
+ }
+ .menu ul{
+    display:inline-flex;
+    list-style: none;
+    color:white;
+    float:left;
+    
+   
+ }
+ .menu ul li{
+   width:100%;
+   text-align:center;
+   padding:10px;
+   margin:5px;
+   padding-left:17px;
+ 
+ 
+  
+ }
+ .menu ul li a{
+   text-decoration: none;
+   color:white;
+   font-size:20px;
+   height:30px;
+  }
+ .active, .menu ul li:hover {
+   background-color:lightgreen;
+   border-radius: 3px;
+ }
+  .submenu{
+    display:none;
+    width:200px;
+  }
+  .menu ul li:hover .submenu{
+    display:block;
+    position:absolute;
+    background-color:lightgreen;
+    
+    margin-left:-17px;
+  }
+  .menu ul li:hover .submenu ul{
+    display:block;
+    
+  }
+  .menu ul li:hover .submenu ul li{
+    width:150px;
+    padding:10px;
+    border-bottom: 1px dotted #fff;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+  }
+  .menu ul li:hover .submenu ul li:last-child{
+    border-bottom: 0px;
+  }
+  .menu ul li:hover .submenu ul li a:hover{
+    color:red;
+   
+  }
+  
+ .line{
+     background-color: white;
+     width: 100%;
+     height: 80px;
+ }
+ 
+ 
+section{
+    width: 100%;
+    height: auto;
+    
+    
+ }
+.principal{
+    width: 100%;
+    height:100px;
+    background-image: url('img1.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+.principal h1{
+padding: 19px;
+    font-size: 50px;
+    color:blue;
+}
+
+.p_image{
+    width: 100%;
+    height:340px;
+  
+    text-align: center;
+    padding: 15px;
+}
+.p_image h1{
+    color:black;
+    font-size: 25px;
+    padding-top: 10px;
+}
+.msg{
+    font-size: 20px;
+    padding: 15px;
+    z-index: 1000;
+}
+.msg p{
+    padding-top:5px;
+}
+.footer{
+        background-color: rgb(219, 7, 7);
+        height:280px;
+        width:100%;
+        color:white;
+        
+      }
+      .footer .inner{
+        
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        padding:10px;
+      }
+      .footer .footer1{
+        margin-left:30px;
+      }
+     
+      .footer .footer1 h3{
+         font-size:70px;
+         letter-spacing: 3px;
+      }
+      .footer .footer2{
+        margin-right:170px;
+        margin-top:30px;
+        
+      }
+      .footer .footer2 h3{
+        color:black;
+        margin-bottom:25px;
+        font-size:25px;
+      
+      }
+      .footer .footer3{
+        margin-right:20px;
+        margin-top:30px;
+      }
+      
+      .footer .footer3 h3{
+        color:black;
+        margin-bottom:25px;
+        font-size:25px;
+      }
+      .footer .footer2 ul li{
+        list-style:none;
+        margin-bottom:15px;
+        cursor:pointer;
+        transition: all 0.3s ease-in-out;
+       
+      }
+      
+      .footer .footer3 ul li{
+        list-style:none;
+        margin-bottom:15px;
+        cursor:pointer;
+        transition: all 0.3s ease-in-out;
+        
+      }
+      .footer .footer2 ul li a{
+       text-decoration: none;
+        color:white;
+      }
+        .footer .footer3 ul li a{
+        text-decoration: none;
+          color:white;
+        }
+      .footer .footer2 ul li a:hover{
+        color:black;
+       
+      }
+      .footer .footer3 ul li a:hover{
+        color:black;
+       
+    
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="img" >
+        <img src="logo_remove.png" alt="logo" style="height:60px;width:60px;margin-left:4px; background-color: red;">
+        </div>
+        <div class="name">
+            <h3 style="color:white;">B.B.S.S.M. INTER COLLEGE <br>MEERUT</h3>
+        </div>
+       <div class="menu">
+            <ul>
+                <li ><a href="index.html">home</a></li>
+                <li><a href="#">About us</a>
+                    <div class="submenu">
+                    <ul>
+                        <li><a href="about.html">Introduction</a></li>
+                       
+                         <li><a href="vimi.html">Vision & Mission</a></li>
+                         <li><a href="">Affiliation</a></li>
+                         
+            </ul>           
+                     
+                     </div>
+                </li>
+                <li class="active"><a href="#">Message</a>
+                    <div class="submenu"> 
+                        <ul>
+                            <li><a href="chairman .html" target="_blank">Chairman's Message</a></li>
+                               <li><a href="principle.html" target="_blank">Principal's Message</a></li>
+                             <li><a href="">Management</a></li>
+                        </ul>  
+                 </li>
+                <li><a href="#">Admissions</a>
+                    <div class="submenu"> 
+                        <ul>   
+                            <li><a href="registration.html">Online Registration</a></li>
+                            
+                            <li><a href="">Fee Structure</a></li>
+                            </ul>
+                </li>
+                <li><a href="#">Facilities</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Academic</a></li>
+                            <li><a href="playground.html">Sports</a></li>
+                          
+                            <li><a href="lab.html">Labs</a></li>
+                          <li><a href="">Smart Classes</a></li>
+                           
+                          </ul>
+                        </div>
+                </li>
+                
+                <li><a href="lib.html">Library</a>
+                    </li>
+                <li><a href="gallery.html">gallery</a>
+                    </li>
+             
+    </header>
+    <div class="line">
+    
+    </div>
+
+
+<section>
+        <div class="principal">
+            <h1>PRINCIPAL MESSAGE</h1>
+        </div>
+    <fieldset style="width:900px; text-align: center;margin:10px 225px;background-image: url('pen.jpg');background-repeat: no-repeat;background-size: cover;">
+        <div class="p_image">
+           
+            <img src="prinici.jpg" alt="img" style="width: 250px; height: 250px;">
+            <h1>MR.KRISHAN KUMAR SHARMA</h1>
+           
+        </div>
+        <div class="msg">
+            <h3><b>"The purpose of education is to replace an empty mind with an open one."</b></h3>
+            <P>The child is the centre of all our aspirations. He is the protector of our country, Dharma (Religion) and culture. The development of our culture and civilization is implicit in the development of the child's personality. A child today holds the key for tomorrow. To relate the child with his land and his ancestors is the direct, clear and unambiguous mandate for education. We have to achieve the all round development of the child through education and sanskar i.e. inculcation of time honored values and traditions.
+                First Saraswati Shishu Mandir.</P>
+                <p>This was the dream which, in 1952 inspired some RSS workers to take up education of children as a mission of their life. The people engaged in this noble task of nation building through proper education of younger generation, laid the foundation of the first school at Gorakhpur in a building rented at a monthly rent of five rupees. After due consideration, they named their school as Saraswati Shishu Mandir-Temple of the Goddess Saraswati dedicated to the children. Thanks to their zeal, dedication and hard work that such like schools began to be established at other places also.
+                Prior to the Gita school which was started at Kurukshetra in 1946.</p>
+                <p> The foundation stone of this school was laid by Shri M.S.Golwalker- revered Shri Guru Ji. The number of such schools increased rapidly in Uttar Pradesh. A state level Shishu Shiksha Prabandh Samiti was formed in 1958 for their proper guidance and planned development. Good education & sound sanskars at the Saraswati Shishu Mandirs earned for them due recognition, honour and popularity in the society. They spread in the other states also. Consequently Within a few years many schools had been established in Delhi, Madhya Pradesh, Andhra Pradesh, Bihar & other states. People began to send their children to these schools in preference to Christian convent-schools and over so- called public schools. In Saraswati Shishu Mandirs the children could learn about their Hindu culture. State level committees were set-up in other states also as the number of schools began to increase there. Punjab and Chandigarh had a Sarvhitkari Shiksha Samiti while Haryana had Hindu Shiksha Samiti,The formation of all India body came in 1977 as a natural corollary of this process. Thus Vidya Bharati was established with its Registered office at Lucknow & functional headquarters in Delhi. All state level committees were affiliated to this Vidya Bharati Akhil Bharatiya Shiksha Sansthan.
+                Vidya Bharati the greatest non-Govt. Educational Organisation :</p>
+               <p>Except Lakshdeep and Mizoram in the whole of the country, there are more than fifty state and Regional Committees affiliated to Vidya Bharati. This nationwide Endeavour of Vidya Bharati for the spread of education through network of educational institutions needs financial support them the society to make them viable, so as to impart education and environment for all round development of Children i.e. physical culture mental, emotional and spiritual development.
+                Vidya Bharati institutions function under a variety of names like Shishu Vatika, Shishu Mandir, Vidya Mandir Saraswati Vidyalaya, Higher Secondary Schools, Training Centers and Research Institutions. </P>
+                <p>On that note, I would like to express my sincere hope that you choose MIET Public School for your child, we have all this and more in store for them. It would be a privilege to be of any assistance to you.
+
+                    <p>God Bless!</p>
+                    
+                   <p><b>KRISHAN KUMAR SHARMA</b></p>
+                    <p><b> (PRINCIPAL)</b></p>
+               </div>
+    </fieldset>
+</section>
+<section class="footer">
+    <div class="inner">
+        <div class="footer1">
+            <h3>B.B.S.S.M. INTER COLLEGE</h3>
+        </div>
+        <div class="footer2">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="vimi.html">MISSION</a></li>
+                <li><a href="vimi.html">VISION</a></li>
+                <li><a href="chairman .html">CHAIRMAN MESSAGE</a></li>
+            </ul>
+        </div>
+        <div class="footer3">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about.html">LABS</a></li>
+                <li><a href="playground.html">SPORTS</a></li>
+                <li><a href="lib.html">LIBRARY</a></li>
+                <li><a href="principle.html">PRINCIPAL MESSAGE</a></li>
+              
+                
+            </ul>
+        </div>
+        
+    </div>
+   
+  
+</section>
+
+</body>
+</html>
+
